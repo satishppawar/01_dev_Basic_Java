@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;java.basic.collection&apos; to &apos;demo.basicJava.collection&apos;&#x0A;- Original project: &apos;01-CollectionDemo&apos;&#x0A;- Original element: &apos;01-CollectionDemo/src/java.basic.collection&apos;&#x0A;- Renamed element: &apos;01-CollectionDemo/src/demo.basicJava.collection&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;java.basic.collection&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;java.basic.collection" name="demo.basicJava.collection" qualified="false" references="true" stamp="1578936535426" textual="false" version="1.0"/>
+</session>

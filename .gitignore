@@ -1,6 +1,6 @@
 bin/
 **/*.class
-project
+**/*.project
 metadata
 **/*.classpath
 bin/

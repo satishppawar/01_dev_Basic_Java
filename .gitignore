@@ -1,6 +1,5 @@
 bin/
 **/*.class
-metadata
 **/*.classpath
 tmp/
 *.tmp

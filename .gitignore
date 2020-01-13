@@ -2,7 +2,6 @@ bin/
 **/*.class
 metadata
 **/*.classpath
-bin/
 tmp/
 *.tmp
 *.bak

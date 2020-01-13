@@ -9,6 +9,6 @@
 *.ear
 *.nar
 hs_err_pid*
-**/bin/
+/bin
 **/*.jar
 **/*.class

@@ -61,7 +61,7 @@ public interface java.util.List<E> extends java.util.Collection<E> {
   public static <E> java.util.List<E> of(E, E, E, E, E, E, E, E, E, E);
   public static <E> java.util.List<E> of(E...);
   public static <E> java.util.List<E> copyOf(java.util.Collection<? extends E>);
-}```
+}
 
 	
 

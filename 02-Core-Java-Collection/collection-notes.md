@@ -1,6 +1,6 @@
 # Collection framework (java.util)
 
-** Pre-requisite topics for Collections framework:-** 
+*Pre-requisite topics for Collections framework:-*
 1.  AutoBoxing.
 2. toString(. method.
 3. type-casting.

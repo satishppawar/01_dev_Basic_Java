@@ -109,6 +109,11 @@ i. TreeSet ii. TreeMap
 ## Reference Links
 1. [collection-framework-in-java](https://www.benchresources.net/collection-framework-in-java/ "benchresources") 
 
+![collectionhierarchy.jpg](collectionhierarchy.jpg "collectionhierarchy") 
+  
+--- 
+
+![02-Java-collection-framework-hierarchy](02-Java-collection-framework-hierarchy.png "02-Java-collection-framework-hierarchy") 
 
 
 

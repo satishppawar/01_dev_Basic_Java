@@ -17,16 +17,33 @@ reduces length of the code
 
 
 ## Different ways to declare a Array:-
-	int[] values;
-	int []values;
-	int values[];
+	
+	type var-name[];
+	OR
+	type[] var-name;
+	 
+	//Examples
+	 
+	int[] numbers;
+	 
+	String names[];
+	int[] a;
+	int []a;
+	int a[];
 
+* A pictorial representation of above example can be as below.
+
+![Array-in-memory.png](Array-in-memory.png "Array-in-memory") 
 
 ### declaration& instantiation & initialization :-
 
->	Approach 1:- int array1[]={10,20,30,40}; //declaring, instantiation, intialization
+>	Approach 1:- //declaring, instantiation, intialization
+	 
+	 int array1[]={10,20,30,40};
 
-> Approach 2:- int[] a=new int[100]; //declaring, instantiation
+> Approach 2:-  //declaring, instantiation
+	
+	int[] a=new int[100];
 	a[0]=10; //initialization
 	a[1]=20;
 
@@ -40,11 +57,23 @@ reduces length of the code
 	// initialize second element
 	anArray[1] = 20;
 
-### declaration of multi dimensional array:-
+### Multi-dimensional array declaration:-
+
+	type var-name[][];
+		OR
+	type[][] var-name;
+		 
+	//Examples
+	int[][] cordinates;
+	String nameSets[][];
+
+	//Different Way to declare array
 	int[][] a;
 	int [][]a;
 	int a[][];
 	int []a[];
+	
+	
 
 
 

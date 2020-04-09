@@ -7,7 +7,7 @@ public class StaticMethodDemo2 {
 	}
 
 	static void method1() {
-		System.out.println("Executing the static method");
+		System.out.println("Executing the static method1");
 	}
 
 	static {

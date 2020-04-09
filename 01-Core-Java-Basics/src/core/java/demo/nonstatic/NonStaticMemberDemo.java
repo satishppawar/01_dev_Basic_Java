@@ -6,7 +6,7 @@ public class NonStaticMemberDemo {
 	// 1. Constructor
 	public NonStaticMemberDemo() {
 		System.out.println("Inside Constructor");
-	}
+	}	
 
 	// 2. non-static block executes before constructor
 	{
@@ -20,7 +20,7 @@ public class NonStaticMemberDemo {
 	public static void main(String[] args) {
 		System.out.println("Inside main method");
 		new NonStaticMemberDemo();
-		// 3.
+		// 3. Non static method Call
 		NonStaticMemberDemo demo = new NonStaticMemberDemo();
 		demo.dosomething();
 	}

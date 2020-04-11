@@ -1,7 +1,7 @@
 package core.java.demo.array;
 
 //Example :- copy the data from one array to another array
-public class ArrayCopyDemo {
+public class ArrayCopyDemo1 {
 	public static void main(String[] args) {
 		int[] copyfrom = { 10, 20, 30, 40, 50, 60, 70, 80 };
 		int size = copyfrom.length;

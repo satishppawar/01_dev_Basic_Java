@@ -2,6 +2,14 @@ package core.java.demo.dataTypes;
 
 public class ExplicitCastDemo {
 	public static void main(String[] args) {
+		//Explicit casting
+		double doubleVar = 42.0d;
+		float floatVar = (float) doubleVar;
+		long longVar = (long) floatVar;
+		int intVar = (int) longVar;
+		short shortVar = (short) intVar;
+		byte byteVar = (byte) shortVar;
+		
 		int i = 100;
 		byte b = (byte) i;
 

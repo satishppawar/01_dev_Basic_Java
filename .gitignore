@@ -7,7 +7,7 @@ bin/
 *.tmp
 .settings/
 .loadpath
-
+*/target/**
 # External tool builders
 .externalToolBuilders/
 
@@ -54,3 +54,4 @@ bin/
 .worksheet
 
 /.metadata/
+

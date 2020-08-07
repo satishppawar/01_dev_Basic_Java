@@ -1,4 +1,4 @@
-package demo.java.wrapperClasses;
+package src.core.java.demo.wrapper;
 /**
  *  Primitive type --->  [Wrapper class] ---> Object type
  *  

@@ -1,4 +1,4 @@
-package demo.java.utils;
+package common.java.utils;
 public class ConstantTest {
 	static final int CONSTANT_VALUE = 10;
 

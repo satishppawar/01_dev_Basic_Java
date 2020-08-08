@@ -1,4 +1,4 @@
-package demo.java.utils;
+package common.java.utils;
 
 public class SrtingDemo {
 	public static void main(String[] args) {

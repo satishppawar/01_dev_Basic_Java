@@ -7,9 +7,9 @@ public class Main {
 
 	}
 
-	public static void calculate(int calcValue) {
+	public static void calculate(int localValue) {
 
-		calcValue = calcValue * 100;
+		localValue = localValue * 100;
 
 	}
 }

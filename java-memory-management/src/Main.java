@@ -9,7 +9,7 @@ public class Main {
 
 	public static void calculate(int calcValue) {
 
-		calcValue = calcValue + 100;
+		calcValue = calcValue * 100;
 
 	}
 }

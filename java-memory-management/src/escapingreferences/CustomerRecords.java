@@ -1,9 +1,10 @@
 package escapingreferences;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
-public class CustomerRecords {
+public class CustomerRecords implements Iterable<Customer> {
 	private Map<String, Customer> records;
 
 	public CustomerRecords() {
@@ -16,5 +17,10 @@ public class CustomerRecords {
 
 	public Map<String, Customer> getCustomers() {
 		return this.records;
+	}
+
+	@Override
+	public Iterator<Customer> iterator() {
+		return records.values().iterator();
 	}
 }

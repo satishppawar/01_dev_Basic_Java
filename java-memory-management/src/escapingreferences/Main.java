@@ -11,7 +11,10 @@ public class Main {
 		for (Customer next : records.getCustomers().values()) {
 			System.out.println(next);
 		}
+		System.out.println("Before clearing CustomerRecords are " + records.getCustomers());
 
+		// Direct referencing is problem
+		records.getCustomers().clear();
+		System.out.println("After clearing CustomerRecords are" + records.getCustomers());
 	}
-
 }

@@ -16,7 +16,7 @@ public class CustomerRecords implements Iterable<Customer> {
 	}
 
 	public Map<String, Customer> getCustomers() {
-		return this.records;
+		return new HashMap<String, Customer>(this.records);
 	}
 
 	@Override

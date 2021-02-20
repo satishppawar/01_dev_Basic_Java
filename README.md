@@ -14,4 +14,4 @@
 
 5. Use branch `java-multithreading-and-parallel-computing` for [java-multithreading-and-parallel-computing](https://udemy.com/course/multithreading-and-parallel-computing-in-java/)
 
-6. User Branch `Basic-Java-7` for `Basic Java (7) course
+6. User Branch `Basic-Java-7` for `Basic Java (7)` course

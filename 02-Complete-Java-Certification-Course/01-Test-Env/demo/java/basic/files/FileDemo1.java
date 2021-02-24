@@ -11,10 +11,10 @@ public class FileDemo1 {
 		try {
 			scanner = new Scanner(file);
 
-			System.out.println("Enter the text to enter in file");
+			System.out.println("Conent of the line is -");
 			while (scanner.hasNext()) {
-				String string = scanner.nextLine();
-				System.out.println("Entered string is \n" + string);
+				String line = scanner.nextLine();
+				System.out.println(line);
 			}
 			scanner.close();
 		} catch (FileNotFoundException e) {

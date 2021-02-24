@@ -14,6 +14,10 @@ public class Bicycle {
 		speed = startSpeed;
 	}
 
+	public Bicycle() {
+		// TODO Auto-generated constructor stub
+	}
+
 	// the Bicycle class has four methods
 	public void setCadence(int newValue) {
 		cadence = newValue;
@@ -31,4 +35,19 @@ public class Bicycle {
 		speed += increment;
 	}
 
+	void changeCadence(int newValue) {
+		cadence = newValue;
+	}
+
+	void changeGear(int newValue) {
+		gear = newValue;
+	}
+
+	void applyBrakes(int decrement) {
+		speed = speed - decrement;
+	}
+
+	void printStates() {
+		System.out.println("cadence:" + cadence + " speed:" + speed + " gear:" + gear);
+	}
 }

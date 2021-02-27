@@ -10,7 +10,7 @@ public class ArrayDemo5DefaultValues {
 		for (Object ee : e) {
 			if (ee instanceof Emp) {
 				Emp eee = (Emp) ee;
-				System.out.println(eee.i + "----" + eee.name);
+				System.out.println(eee.eid + "----" + eee.ename);
 			}
 			if (ee == null) {
 				System.out.println(ee);

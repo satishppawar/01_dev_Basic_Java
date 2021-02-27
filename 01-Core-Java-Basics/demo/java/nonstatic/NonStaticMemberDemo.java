@@ -14,7 +14,7 @@ public class NonStaticMemberDemo {
 	}
 
 	static {
-		System.out.println("Inside static block ");
+		System.out.println("##### Inside static block ");
 	}
 
 	public static void main(String[] args) {

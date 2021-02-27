@@ -1,5 +1,6 @@
 package demo.java.staticdemo;
 
+//// EX- Multiple Static block executes one after sequentially
 public class StaticDemo2 {
 	public static void main(String[] args) {
 		System.out.println("Inside the main");

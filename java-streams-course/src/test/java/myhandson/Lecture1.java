@@ -1,4 +1,4 @@
-package lectures;
+package myhandson;
 
 import beans.Person;
 import com.google.common.collect.ImmutableList;
@@ -13,7 +13,7 @@ import org.junit.Test;
 // 2. Then change implementation to find first 10 people
 public class Lecture1 {
 
-  //STEP1 -Implementation of the traditional approach
+  // STEP1 -Implementation of the traditional approach
   @Test
   public void imperativeApproach() throws IOException {
     List<Person> people = MockData.getPeople();
@@ -22,9 +22,9 @@ public class Lecture1 {
     final int limit = 10;
     int counter = 0;
 
-    for (Person person : people) {
-      if (person.getAge() <= 18) {
-        youngPeople.add(person);
+    for (Person person : people) { // use stream()
+      if (person.getAge() <= 18) {// use filter()
+        youngPeople.add(person);// use collect()
         counter++;
         if (counter == limit) {
           break;
@@ -32,7 +32,7 @@ public class Lecture1 {
       }
     }
 
-    for (Person young : youngPeople) {
+    for (Person young : youngPeople) { // same as forEach
       System.out.println(young);
     }
 
@@ -42,11 +42,15 @@ public class Lecture1 {
   public void declarativeApproachUsingStreams() throws Exception {
     ImmutableList<Person> people = MockData.getPeople();
 
-    //STEP2: Using the stream API
-    List<Person> youngPeople = people.stream().filter(person -> person.getAge() <= 18).limit(10)
+    // STEP2: Using the stream API
+    List<Person> youngPeople = people.stream()// Returns a sequential Stream with this collection as
+                                              // its source.
+        .filter(person -> person.getAge() <= 18).limit(10)// Returns a stream consisting of the
+                                                          // elements of this stream that match the
+                                                          // given predicate.
         .collect(Collectors.toList());
 
-    youngPeople.forEach(System.out::println);
+    youngPeople.forEach(System.out::println);// forEach
 
   }
 }

@@ -5,6 +5,7 @@ import com.google.common.collect.ImmutableList;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import mockdata.MockData;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
@@ -16,6 +17,7 @@ public class Lecture1 {
   // STEP1 -Implementation of the traditional approach
   @Test
   public void imperativeApproach() throws IOException {
+    System.out.println("imperativeApproach");
     List<Person> people = MockData.getPeople();
     List<Person> youngPeople = Lists.newArrayList();
 
@@ -41,16 +43,51 @@ public class Lecture1 {
   @Test
   public void declarativeApproachUsingStreams() throws Exception {
     ImmutableList<Person> people = MockData.getPeople();
-
     // STEP2: Using the stream API
-    List<Person> youngPeople = people.stream()// Returns a sequential Stream with this collection as
-                                              // its source.
+    System.out.println("============================================================================");
+    System.out.println("YoungPeople using stream,filter,limit and collect");
+    System.out.println("============================================================================");
+   
+    List<Person> youngPeople = people.stream()
         .filter(person -> person.getAge() <= 18).limit(10)// Returns a stream consisting of the
                                                           // elements of this stream that match the
                                                           // given predicate.
         .collect(Collectors.toList());
 
     youngPeople.forEach(System.out::println);// forEach
-
+    
+    //TODO using stream uncomment
+    /*System.out.println("============================================================================");
+    System.out.println("myYoungPeople using stream");
+    System.out.println("============================================================================");
+    //Returns a sequential Stream with this collection as its source.
+    Stream<Person> myYoungPeople=(Stream<Person>) people.stream();
+    System.out.println("myYoungPeople"+myYoungPeople);
+    myYoungPeople.forEach(System.out::println);
+    System.out.println("##############################################################################");
+   */
+    
+  //TODO  uncomment
+    /*System.out.println("============================================================================");
+    System.out.println("myYoungPeople1 using stream and filter");
+    System.out.println("============================================================================");
+    
+    Stream<Person> myYoungPeople1=(Stream<Person>) people.stream().filter(person-> person.getAge()<=18);
+    myYoungPeople1.forEach(System.out::println);
+    System.out.println("##############################################################################");
+    */
+    
+    
+  //TODO  uncomment
+    /*System.out.println("============================================================================");
+    System.out.println("YoungPeople using stream,filter and limit");
+    System.out.println("============================================================================");
+   
+    Stream<Person> myYoungPeople2=(Stream<Person>) people.stream().filter(person-> person.getAge()<=18).limit(10);
+   // myYoungPeople2.forEach(System.out::println);
+    
+    System.out.println("##############################################################################");
+    */
+    
   }
 }

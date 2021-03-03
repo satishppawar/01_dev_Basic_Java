@@ -2,12 +2,15 @@ package demo.java.array;
 
 import org.apache.commons.lang3.SerializationUtils;
 
+import demo.java.pojo.Department;
+import demo.java.pojo.Employee;
+
 public class ArrayDeepCopyDemo1 {
 	public static void main(String[] args) {
 		/*
 		 * Learn to create deep copy of an array in Java with example. We will be using
-		 * Apache Commons Lang library and it’s utility method SerializationUtils.clone(
-		 * array ) to array deep copy.
+		 * Apache Commons Language library and it’s utility method
+		 * SerializationUtils.clone( array ) to array deep copy.
 		 */
 		Employee[] empArr = new Employee[2]; // Original array
 
@@ -29,7 +32,7 @@ public class ArrayDeepCopyDemo1 {
 		System.out.println("Verify the change in original array empArr[0] - CHANGED");
 		System.out.println(empArr[0].getFirstName()); // Unknown
 		System.out.println(empArr[0].getDepartment().getName()); // Unknown
-		
+
 		System.out.println("---------------------------------\n");
 
 		System.out.println("Verify the change in deep copied array - UNCHANGED");

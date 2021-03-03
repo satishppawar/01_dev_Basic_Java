@@ -1,4 +1,4 @@
-package demo.java.array;
+package demo.java.pojo;
 
 public class Emp {
 

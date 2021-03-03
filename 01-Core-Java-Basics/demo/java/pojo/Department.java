@@ -1,4 +1,4 @@
-package demo.java.array;
+package demo.java.pojo;
 
 import java.io.Serializable;
 

@@ -1,5 +1,7 @@
 package demo.java.array;
 
+import demo.java.pojo.Emp;
+
 //Example:-process of adding different types Objects in Object array
 public class ArrayUtilDemo2 {
 
@@ -11,7 +13,7 @@ public class ArrayUtilDemo2 {
 		for (Object a1 : a) {
 			if (a1 instanceof Emp) {
 				Emp e1 = (Emp) a1;
-				System.out.println(e1.i + "---" + e1.name);
+				System.out.println(e1.eid + "---" + e1.ename);
 			}
 			if (a1 instanceof Student) {
 				Student s1 = (Student) a1;

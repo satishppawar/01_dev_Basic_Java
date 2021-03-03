@@ -16,5 +16,7 @@
 
 6. Use Branch `Basic-Java-7` for `Basic Java (7)` course
 
-7. User branh 'java-streams-course' for Couse [Java Streams API Developer Guide
+7. Use branh 'java-streams-course' for Couse [Java Streams API Developer Guide
 ](https://www.udemy.com/course/java-streams/)
+
+8. Use Docker-Hands-on-For-Java-dev.zip for [Java docker course](https://www.udemy.com/course/docker-hands-on/)

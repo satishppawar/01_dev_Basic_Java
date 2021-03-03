@@ -10,8 +10,11 @@
 3. Use branch `java-threading` for `Java MultiThreading`
 
 4. Use branch `java-certification-course` for Course
- [ The Complete Java Certification Course](https://hitachivantara.udemy.com/course/master-practical-java-development/learn/lecture/7831118#content) 
+ [ The Complete Java Certification Course](https://udemy.com/course/master-practical-java-development/learn/lecture/7831118#content) 
 
 5. Use branch `java-multithreading-and-parallel-computing` for [java-multithreading-and-parallel-computing](https://udemy.com/course/multithreading-and-parallel-computing-in-java/)
 
-6. User Branch `Basic-Java-7` for `Basic Java (7)` course
+6. Use Branch `Basic-Java-7` for `Basic Java (7)` course
+
+7. User branh 'java-streams-course' for Couse [Java Streams API Developer Guide
+](https://www.udemy.com/course/java-streams/)

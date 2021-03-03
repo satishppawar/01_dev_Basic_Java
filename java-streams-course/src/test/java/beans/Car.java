@@ -10,8 +10,7 @@ public class Car {
   private final Double price;
 
 
-  public Car(Integer id, String make, String model, String color, Integer year,
-      Double price) {
+  public Car(Integer id, String make, String model, String color, Integer year, Double price) {
     this.id = id;
     this.make = make;
     this.model = model;
@@ -46,13 +45,7 @@ public class Car {
 
   @Override
   public String toString() {
-    return "Car{" +
-        "id=" + id +
-        ", make='" + make + '\'' +
-        ", model='" + model + '\'' +
-        ", color='" + color + '\'' +
-        ", year=" + year +
-        ", price=" + price +
-        '}';
+    return "Car{" + "id=" + id + ", make='" + make + '\'' + ", model='" + model + '\'' + ", color='"
+        + color + '\'' + ", year=" + year + ", price=" + price + '}';
   }
 }

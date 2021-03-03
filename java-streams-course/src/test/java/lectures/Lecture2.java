@@ -31,19 +31,16 @@ public class Lecture2 {
   public void rangeIteratingLists() throws Exception {
     List<Person> people = MockData.getPeople();
 
-    IntStream.range(0, people.size())
-        .forEach(index -> {
-          Person person = people.get(index);
-          System.out.println(person);
-        });
+    IntStream.range(0, people.size()).forEach(index -> {
+      Person person = people.get(index);
+      System.out.println(person);
+    });
 
   }
 
   @Test
   public void intStreamIterate() throws Exception {
-      IntStream.iterate(0, operand -> operand + 1)
-          .filter(number -> number % 2 == 0)
-          .limit(20)
-          .forEach(System.out::println);
+    IntStream.iterate(0, operand -> operand + 1).filter(number -> number % 2 == 0).limit(20)
+        .forEach(System.out::println);
   }
 }

@@ -1,0 +1,5 @@
+[main] DEBUG example.demo.lo4j.Log4jPropertiesConfigurationExample  - Log4j appender configuration is successful !!
+[main] DEBUG example.demo.lo4j.Log4jPropertiesConfigurationExample  - Log4j appender configuration is successful !!
+[main] DEBUG example.demo.log4j.Log4jPropertiesConfigurationExample  - Log4j appender configuration is successful !!
+[main] DEBUG example.demo.log4j.Log4jPropertiesConfigurationExample  - Log4j appender configuration is successful !!
+[main] INFO  example.demo.log4j.Log4jPropertiesConfigurationExample  - Log4j appender configuration is successful !!

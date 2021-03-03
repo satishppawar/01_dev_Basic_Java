@@ -27,11 +27,7 @@ public class PersonDTO {
 
   @Override
   public String toString() {
-    return "PeopleDTO{" +
-        "id=" + id +
-        ", name='" + name + '\'' +
-        ", age=" + age +
-        '}';
+    return "PeopleDTO{" + "id=" + id + ", name='" + name + '\'' + ", age=" + age + '}';
   }
 
   public static PersonDTO map(Person person) {

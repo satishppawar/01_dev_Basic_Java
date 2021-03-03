@@ -10,11 +10,9 @@ import org.junit.Test;
 
 public class Lecture10 {
 
-  private static final List<ArrayList<String>> arrayListOfNames = Lists.newArrayList(
-      Lists.newArrayList("Mariam", "Alex", "Ismail"),
-      Lists.newArrayList("John", "Alesha", "Andre"),
-      Lists.newArrayList("Susy", "Ali")
-  );
+  private static final List<ArrayList<String>> arrayListOfNames =
+      Lists.newArrayList(Lists.newArrayList("Mariam", "Alex", "Ismail"),
+          Lists.newArrayList("John", "Alesha", "Andre"), Lists.newArrayList("Susy", "Ali"));
 
   @Before
   public void setUp() {
@@ -23,12 +21,12 @@ public class Lecture10 {
 
   @Test
   public void withoutFlatMap() throws Exception {
-//    [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
+    // [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
 
     List<String> names = Lists.newArrayList();
 
-    for(List<String> listOfNames : arrayListOfNames) {
-      for(String name : listOfNames) {
+    for (List<String> listOfNames : arrayListOfNames) {
+      for (String name : listOfNames) {
         names.add(name);
       }
     }
@@ -39,11 +37,10 @@ public class Lecture10 {
 
   @Test
   public void withFlatMap() throws Exception {
-//   [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
+    // [Mariam, Alex, Ismail, John, Alesha, Andre, Susy, Ali]
 
-    List<String> names = arrayListOfNames.stream()
-        .flatMap(List::stream)
-        .collect(Collectors.toList());
+    List<String> names =
+        arrayListOfNames.stream().flatMap(List::stream).collect(Collectors.toList());
 
     System.out.println(names);
 

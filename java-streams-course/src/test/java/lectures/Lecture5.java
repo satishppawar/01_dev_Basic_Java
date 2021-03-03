@@ -2,7 +2,6 @@ package lectures;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
-
 import beans.Car;
 import beans.Person;
 import beans.PersonDTO;
@@ -21,9 +20,7 @@ public class Lecture5 {
 
     final Predicate<Car> carPredicate = car -> car.getPrice() < 20000;
 
-    List<Car> carsFiltered = cars.stream()
-        .filter(carPredicate)
-        .collect(Collectors.toList());
+    List<Car> carsFiltered = cars.stream().filter(carPredicate).collect(Collectors.toList());
 
     carsFiltered.forEach(System.out::println);
     System.out.println(carsFiltered.size());
@@ -35,9 +32,7 @@ public class Lecture5 {
     // transform from one data type to another
     List<Person> people = MockData.getPeople();
 
-    List<PersonDTO> dtos = people.stream()
-        .map(PersonDTO::map)
-        .collect(Collectors.toList());
+    List<PersonDTO> dtos = people.stream().map(PersonDTO::map).collect(Collectors.toList());
 
     dtos.forEach(System.out::println);
 
@@ -49,11 +44,7 @@ public class Lecture5 {
   @Test
   public void averageCarPrice() throws Exception {
     // calculate average of car prices
-    double average = MockData.getCars()
-        .stream()
-        .mapToDouble(Car::getPrice)
-        .average()
-        .orElse(0);
+    double average = MockData.getCars().stream().mapToDouble(Car::getPrice).average().orElse(0);
     System.out.println(average);
   }
 
@@ -62,6 +53,5 @@ public class Lecture5 {
     MockData.getCars().forEach(System.out::println);
   }
 }
-
 
 

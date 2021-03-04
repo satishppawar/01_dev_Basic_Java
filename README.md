@@ -16,5 +16,5 @@
 
 6. Use Branch `Basic-Java-7` for `Basic Java (7)` course
 
-7. User branh 'java-streams-course' for Couse [Java Streams API Developer Guide
+7. User branh `java-streams-course` for Couse [Java Streams API Developer Guide
 ](https://www.udemy.com/course/java-streams/)

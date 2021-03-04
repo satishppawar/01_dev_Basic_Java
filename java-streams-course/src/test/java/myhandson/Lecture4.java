@@ -1,4 +1,4 @@
-package lectures;
+package myhandson;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -8,18 +8,10 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import org.junit.Test;
 
-/**
- * Removing the duplicate from the list
- * 
- * @author Satish
- *
- */
 public class Lecture4 {
-
 
   @Test
   public void distinct() throws Exception {
-    System.out.println("Using stream().distinct() with List");
     final List<Integer> numbers =
         ImmutableList.of(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 9, 9);
 
@@ -35,13 +27,11 @@ public class Lecture4 {
   public void distinctWithSet() throws Exception {
     final List<Integer> numbers =
         ImmutableList.of(1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 9, 9, 9);
-    System.out.println("Using stream().distinct() with Set");
+
     Set<Integer> distinctNumbers = numbers.stream().collect(Collectors.toSet());
 
     assertThat(distinctNumbers).hasSize(9);
 
     System.out.println(distinctNumbers);
-    // Using method reference operator ::
-    distinctNumbers.forEach(System.out::println);
   }
 }

@@ -84,3 +84,10 @@ number.stream().map(x->x*x).forEach(y->System.out.println(y));
 List number = Arrays.asList(2,3,4,5);
 int even = number.stream().filter(x->x%2==0).reduce(0,(ans,i)-> ans+i);
 ```
+
+### findAny() vs findFirst()
+ 
+ * findAny() - is non-deterministic
+ 	* The behavior of this operation is explicitly nondeterministic; it is free to select any element in the stream.  This is to allow for maximal performance in parallel operations; the cost is that multiple invocations on the same source may not return the same result.
+	 
+ * findFirst() - is deterministic

@@ -25,7 +25,8 @@ Available in the resources for the course
 
 ## Interview Questions
 
-### Java Platform
+### Java Platform 
+#### code - No
 - 1 . Why is Java so popular?
 - 2 . What is platform independence?
 - 3 . What is bytecode?
@@ -34,6 +35,7 @@ Available in the resources for the course
 - 6 . What is the role for a classloader in Java?
 
 ### Wrapper Classes
+#### Code -  /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/wrapper/WrapperExamples.java
 - 7 . What are Wrapper classes?
 - 8 . Why do we need Wrapper classes in Java?
 - 9 . What are the different ways of creating Wrapper class instances?
@@ -45,6 +47,7 @@ Available in the resources for the course
 - 15 . What is explicit casting?
 
 ### Strings
+#### code - /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/string/StringExamples.java
 - 16 . Are all String’s immutable?
 - 17 . Where are String values stored in memory?
 - 18 . Why should you be careful about String concatenation(+) operator in loops?
@@ -54,20 +57,31 @@ Available in the resources for the course
 - 22 . Can you give examples of different utility methods in String class?
 
 ### Object oriented programming basics
+#### Code - /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/basics
 - 23 . What is a class?
 - 24 . What is an object?
 - 25 . What is state of an object?
 - 26 . What is behavior of an object?
 - 27 . What is the super class of every class in Java?
-- 28 . Explain about toString method ?
+- 28 . Explain about toString method ? 
+> /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/object/ToStringExamples.java
+
 - 29 . What is the use of equals method in Java?
+> /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/object/EqualsHashCodeExamples.java
+
 - 30 . What are the important things to consider when implementing equals method?
 - 31 . What is the Hashcode method used for in Java?
 - 32 . Explain inheritance with examples . 
+>com.in28minutes.java.oops.inheritance.reuse.TestReuse.java
+
 - 33 . What is method overloading?
+> /JavaInterviewQuestionsAndAnswers/src/main/java/com/in28minutes/java/oops/inheritance/overloading/OverloadingRules.java
+
 - 34 . What is method overriding?
 - 35 . Can super class reference variable can hold an object of sub class?
 - 36 . Is multiple inheritance allowed in Java?
+> com.in28minutes.java.oops.interfaces
+
 - 37 . What is an interface?
 - 38 . How do you define an interface?
 - 39 . How do you implement an interface?
@@ -88,6 +102,7 @@ Available in the resources for the course
 - 54 . Is a super class constructor called even when there is no explicit call from a sub class constructor?
 
 ### Advanced object oriented concepts
+#### Code - com.in28minutes.java.oops.inheritance.polymorphism
 - 55 . What is polymorphism?
 - 56 . What is the use of instanceof operator in Java?
 - 57 . What is coupling?

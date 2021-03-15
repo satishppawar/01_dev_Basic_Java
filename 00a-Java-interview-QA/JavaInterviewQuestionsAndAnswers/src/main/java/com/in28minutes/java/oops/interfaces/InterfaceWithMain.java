@@ -1,6 +1,5 @@
 package com.in28minutes.java.oops.interfaces;
 
-
 public class InterfaceWithMain {
 	public static void main(String[] args) {
 		Bird bird = new Bird();

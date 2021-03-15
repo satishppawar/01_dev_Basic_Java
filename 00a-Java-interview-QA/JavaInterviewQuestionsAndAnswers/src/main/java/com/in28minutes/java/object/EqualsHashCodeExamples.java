@@ -1,5 +1,5 @@
 package com.in28minutes.java.object;
-
+//What is the use of equals method in Java?
 class Client {
 	private int id;
 

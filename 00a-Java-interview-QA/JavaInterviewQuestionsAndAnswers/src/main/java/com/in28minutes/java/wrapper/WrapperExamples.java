@@ -1,12 +1,28 @@
 package com.in28minutes.java.wrapper;
 
+/*
+ - 7 . What are Wrapper classes?
+- 8 . Why do we need Wrapper classes in Java?
+- 9 . What are the different ways of creating Wrapper class instances?
+- 10 . What are differences in the two ways of creating Wrapper classes?
+- 11 . What is auto boxing?
+- 12 . What are the advantages of auto boxing?
+- 13 . What is casting?
+- 14 . What is implicit casting?
+- 15 . What is explicit casting?
+ 
+ */
+
+/***
+ *  Wrapper classes - Boolean,Byte,Character,Double,Float,Integer,Long,Short
+ * <br> Primitive data types - boolean,byte,char ,double,float,int ,long,short
+ * 
+ * <br>Wrapper classes are final
+ *
+ */
 public class WrapperExamples {
 
 	public static void main(String[] args) {
-		// Boolean,Byte,Character,Double,Float,Integer,Long,Short
-		// boolean,byte,char ,double,float,int ,long,short
-
-		// Wrapper classes are final
 
 		Integer number = new Integer(55);// int
 
@@ -39,18 +55,18 @@ public class WrapperExamples {
 		i = 6;
 		i = 7;
 
-		//Immutability
-		//Wrapper Classes and String
+		// Immutability
+		// Wrapper Classes and String
 		Integer integer = 6;
 		integer = 7;
 
-		//#########
-		//#   6   #
-		//#########
+		// #########
+		// # 6 #
+		// #########
 
-		//#########
-		//#   7   #
-		//#########
+		// #########
+		// # 7 #
+		// #########
 
 		// valueOfMethods
 		// Provide another way of creating a Wrapper Object
@@ -61,7 +77,7 @@ public class WrapperExamples {
 														// variable
 
 		// xxxValue methods help in creating primitives
-		//Integer integer = Integer.valueOf(57);
+		// Integer integer = Integer.valueOf(57);
 		int primitive = seven.intValue();// 57
 		float primitiveFloat = seven.floatValue();// 57.0f
 
@@ -77,7 +93,7 @@ public class WrapperExamples {
 		int hundredPrimitive = Integer.parseInt("100");// 100 is stored in
 														// variable
 
-		//Creates new Integer object
+		// Creates new Integer object
 		Integer wrapperEight = new Integer(8);
 
 		// Normal static toString method
